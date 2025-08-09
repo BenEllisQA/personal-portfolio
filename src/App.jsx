@@ -3,10 +3,17 @@ import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, [])
+
   return ( 
-  <> 
+  <div className={`app ${isLoaded ? "loaded" : ""}`}> 
     <Navbar />
     <Hero />
     <Projects />
@@ -15,7 +22,7 @@ function App() {
     <>
       <p> &copy; 2025 Ben Ellis. All rights reserved.</p>
     </>
-  </>
+  </div>
   );
 }
 
