@@ -43,7 +43,7 @@ export const Hero = () => {
                         Ben Ellis
                     </motion.h1>
                     <motion.h2 className="hero-subtitle" variants={fadeInUp}>
-                        QA Analyst & Creative Designer
+                        QA Analyst & Creative Developer
                     </motion.h2>
                     <motion.p className="hero-description" variants={fadeInUp}>
                         Ensuring flawless user experiences today, building beautiful ones tomorrow. QA with a front-end future.
