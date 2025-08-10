@@ -33,7 +33,7 @@ export const Hero = () => {
                     animate="animate"
                 >
                     <motion.div className="hero-badge">
-                        <span> 👋 Hello there, I am </span>
+                        <span> 👋 Hey there, welcome to my portfolio!</span>
                     </motion.div>
                     <motion.h1 
                     className="glitch" 
@@ -112,10 +112,10 @@ export const Hero = () => {
     };`}
                         </SyntaxHighlighter>
                     </div>
-                    <motion.div>
+                    <motion.div className="floating-card" animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}>
                         <div className="card-content">
-                            <span>💻</span>
-                            <span> Currently working on something fun!</span>
+                            <span className="card-icon">💻</span>
+                            <span className="card-text"> Currently working on something fun!</span>
                         </div>
                     </motion.div>
                 </motion.div>
