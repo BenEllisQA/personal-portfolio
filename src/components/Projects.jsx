@@ -32,6 +32,7 @@ export const Projects = () => {
                 viewport={{ once: true }}
                 > 
                 My Projects
+             </motion.h2>
                 <motion.div 
                     className="project-grid" 
                     variants={staggerContainer}
@@ -49,7 +50,7 @@ export const Projects = () => {
                         className="project-image" 
                         style={{backgroundImage: "url('/projects/ai-saas.png')"}} 
                         whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-                        >
+                        />
                             <h3> AI SaaS Platform</h3>
                             <p>
                                 A modern SaaS platform built with Next.js and OpenAI integration, featuring real-time AI-powered content generation and analytics.
@@ -60,7 +61,6 @@ export const Projects = () => {
                                 <span>Tailwind CSS</span>
                             </div>
                         </motion.div>
-                    </motion.div>
 
                     <motion.div 
                         className="project-card" 
@@ -72,7 +72,7 @@ export const Projects = () => {
                         className="project-image" 
                         style={{backgroundImage: "url('/projects/social-media.png')"}} 
                         whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-                        >
+                        />
                             <h3> Social Media Dashboard</h3>
                             <p>
                                 A comprehensive social media management dashboard with analytics, scheduling and engagement features.
@@ -83,7 +83,6 @@ export const Projects = () => {
                                 <span>MongoDB</span>
                             </div>
                         </motion.div>
-                    </motion.div>
 
                     <motion.div 
                         className="project-card" 
@@ -95,7 +94,7 @@ export const Projects = () => {
                         className="project-image" 
                         style={{backgroundImage: "url('/projects/stopwatch.png')"}} 
                         whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-                        >
+                        />
                             <h3> Productivity Timer</h3>
                             <p>
                                 A sleek productivity timer application with customisable work sessions, statistics tracking and dark mode support.
@@ -106,9 +105,7 @@ export const Projects = () => {
                                 <span>Tailwind CSS</span>
                             </div>
                         </motion.div>
-                    </motion.div>
                 </motion.div>
-            </motion.h2>
         </motion.section>
     );
 };
